@@ -25,4 +25,4 @@ tar -czf ${BACKUP_FOLDER}/${HOSTNAME}_$(date +%Y%m%d_%H%M)_etc.tar.gz ${CONFIG_F
 # Rsync (e.g. Synology)
 rsync -avzhe 'ssh -p ${RSYNC_PASS}' --progress ${BACKUP_FOLDER} ${RSYNC_USER}@{RSYNC_HOST}:${RSYNC_TARGET}
 
-exit†
+exit;
